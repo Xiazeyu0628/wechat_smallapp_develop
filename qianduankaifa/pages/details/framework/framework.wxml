@@ -1,0 +1,38 @@
+<!--<import src="/pages/template/movie/movie.wxml"/>
+  <template is="movie"  data="{{...listArray}}"/>-->
+
+  <view class="container">
+    <scroll-view scroll-y="true" class="scroll_container">
+      <view class="titie">{{listArray.diary_name}}</view>
+      <view class="avatar_container">
+        <image src='{{listArray.avatar_image}}' class="avatar_image" ></image>
+        <view class="avatar_name">{{listArray.author_name}}</view>
+      </view>
+      <view class="content_container">
+        <image src="{{listArray.content_image}}" class="content_picture" mode="widthFix"></image>
+      <view>
+      <text>{{listArray.content}}</text>
+      </view>
+      
+      </view>
+    </scroll-view>
+  <view class="bottom_container" >
+    <view hover-class="tip_hover_class">
+        <image bindtap="share" src="/images/share.png" class="image"></image>
+        <view style='width:0px;height:0px;overflow:hidden;'>
+          <canvas canvas-id="shareCanvas" style="width:300px;height:450px"></canvas>
+        </view>
+
+    </view>
+
+    <view wx:if="{{!flag}}">
+         <image src="/images/star2.png" class="image" bindtap="handlecollection"></image>
+    </view>
+    
+    <view wx:if="{{flag}}">
+         <image src="/images/star.png" class="image" bindtap="handlecollection"></image>
+    </view>
+   
+
+  </view>
+</view>

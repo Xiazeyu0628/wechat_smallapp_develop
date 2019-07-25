@@ -1,0 +1,59 @@
+<!--pages/timetable/timetable.wxml-->
+
+<page>
+  <view class="container_clendar">
+    <calendar
+      calendarConfig="{{calendarConfig}}"
+      bind:afterTapDay="afterTapDay"
+      bind:whenChangeMonth="whenChangeMonth"
+      bind:onTapDay="onTapDay"
+      bind:afterCalendarRender="afterCalendarRender"
+    ></calendar>
+  </view>
+
+  <view class="container_todoitem" scroll-y="true" >
+    <scroll-view >
+      <view class="weui-cells__title">{{selectedmonth}}月{{selectedday}}日待办事项</view>
+
+    <view class="item-box">
+      <view class="items">
+        <view wx:for="{{listArray}}"  wx:key="{{index}}"  class="item">
+          <view bindtouchstart="touchS" bindtouchmove="touchM" bindtouchend="touchE" data-index="{{index}}" style="{{item.txtStyle}}" class="inner txt">
+          <image class="item-icon" mode="widthFix" src="../../../images/u=3773081221,1350643278&fm=26&gp=0.jpg"></image>     {{item.todoitem}}
+          </view>
+          <view data-index="{{index}}" bindtap = "bindItemdel" class="inner del">删除</view>
+        </view>
+      </view>
+    </view>
+
+
+      <form bindsubmit="bindFormSubmit"  bindreset="formReset">
+        <view class="weui-cells__title" hidden="{{!focus}}">添加事项</view>
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell">
+            <view class="weui-cell__bd">
+              <textarea 
+                name="textarea"
+                class="weui-textarea" 
+                placeholder-class="holder_class"
+                placeholder="请输入待办事项" 
+                focus="{{focus}}" 
+                cursor-spacing="50" 
+                hidden="{{!focus}}" 
+                show-confirm-bar="true"
+                height="100" />
+                <button form-type="submit" hidden="{{!focus}}">提交 </button>
+                <button form-type="reset" hidden="{{!focus}}">重置 </button>
+            </view>
+          </view>
+        </view>
+      </form>
+
+      <view class="btn-area">
+      <button class="weui-btn" type="primary" bindtap="bindButtonTap">添加todo </button>
+       
+      </view>
+      
+    </scroll-view>
+  </view>
+</page>

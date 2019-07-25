@@ -1,0 +1,23 @@
+<!--pages/service/service.wxml-->
+<view class="container">
+  <scroll-view scroll-y="true" class="scroll_container">
+    <view class='main-wrapper'>
+      <page1 wx:if='{{activeIndex == 0}}' onShow="{{tabbar[0].selected}}" ></page1>
+      <page2 wx:if='{{activeIndex == 1}}' onShow="{{tabbar[1].selected}}" ></page2>
+      <page3 wx:if='{{activeIndex ==2}}' onShow="{{tabbar[2].selected}}" data-postid="2"></page3>
+    </view>
+  </scroll-view>
+<view class="bottom_container" >
+    <view class="element" bindtap="onChange" data-postid="0">
+        <view class="font_size">个人信息</view>
+    </view>
+    <view class="element" bindtap="onChange" data-postid="1">
+       
+         <view class="font_size">学习经历</view>
+    </view>
+    <view class="element" bindtap="onChange" data-postid="2">
+       
+         <view class="font_size">未来规划</view>
+    </view>
+  </view>
+</view>

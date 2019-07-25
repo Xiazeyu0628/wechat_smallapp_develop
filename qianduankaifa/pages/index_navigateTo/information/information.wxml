@@ -1,0 +1,36 @@
+<import src="/pages/template/ariticles/ariticles.wxml"/>
+<view class="mpage {{!ui.tStart? 'withAnimate': ''}}" style="left:{{ui.offsetLeft}}px;width: {{ui.windowWidth}}px" bindtouchstart="handlerStart" catchtouchmove="handlerMove" bindtouchcancel="handlerCancel" bindtouchend="handlerEnd" bindtap="handlerPageTap">
+  <scroll-view  scroll-y style="height: 100%;">
+  <!--bindscroll="handlerScroll"-->
+    <view class="search">
+      <view catchtap="handlerAvatarTap" class="avatar">
+        <image src="{{avatar_image}}"></image>
+      </view>
+      <view  catchtap="upload" class="avatar">
+       <image src="/images/upload.jpg"></image>
+      </view>
+    </view>
+
+    <view 
+    wx:for="{{listArray}}" 
+    wx:key="index" 
+    class="item" 
+    data-id="{{listArray[index].movie_id}}" 
+    data-type="2" 
+    bindtap="goto">
+    <template is="ariticles" data="{{...item}}"/>
+    </view>
+
+
+  </scroll-view>
+</view>
+<view bindtouchstart="handlerStart" catchtouchmove="handlerMove" bindtouchcancel="handlerCancel" bindtouchend="handlerEnd" class="user" style="width: {{ui.menuWidth}}px">
+   <view style="width: {{ui.menuWidth}}px;left:{{-ui.menuWidth/3 + ui.offsetLeft/3}}px" class="user-box {{!ui.tStart? 'withAnimate': ''}}">
+     <view class="user-face-wrapper">
+       <image class="user-face" src="../../../images/ic_face.png"></image>
+     </view>
+     <view wx:for="1" wx:key="index" class="one-menu">
+        <text>学习资料</text>
+     </view>
+   </view>
+</view>

@@ -1,0 +1,72 @@
+/**index.wxss**/
+
+.container {
+  width: 100vw;
+  height: 100vh; /*(depending on 'box-sizing') of certain boxes.*/
+ background-color: rgb(248, 248, 246);
+  display: flex;
+  flex-direction: column;  /*flex-direction属性决定主轴的方向*/
+  align-items: center;
+  justify-content: space-between;
+  /*padding-bottom: 15px;  */   /*设置 container 元素的下内边距：*/
+}
+
+
+.container .image_container{
+  position: relative;
+  margin: 15rpx  10rpx 30rpx 10rpx;
+}
+.container .image_container .image {
+  width: 100%;
+  border-radius: 5rpx;
+  box-shadow: 0 0 5rpx #5F687E;
+}
+
+.container .name_class{
+position: absolute;
+top: 100rpx;
+left: 50rpx;
+font-size: 43rpx;
+font-weight: bold;
+/*top buttom 和left right 只有在相对位置定位的情况下才有效果 */
+}
+
+.container .card_information_class{
+position: absolute;
+top: 300rpx;
+left: 50rpx;
+font-size: 28rpx;
+color: #5F687E;
+}
+
+
+.container .more_information_container{
+  width: 100%;
+  display: flex;
+  direction: column;
+  margin: 0rpx  0rpx 20rpx 0rpx; /*顺时针*/
+  background-color: rgb(248, 248, 246)
+
+}
+
+.container .more_information_container .learnmore{
+width: 100%;
+height: 100rpx;
+display: flex;
+direction: row;
+align-content: center;
+margin: 0rpx  0rpx 0rpx 0rpx; /*顺时针*/
+background-color: rgb(250, 250, 250);
+
+
+}
+
+.container .more_information_container .learnmore .learnmore_picture{
+width:100rpx;
+}
+
+.container .more_information_container .learnmore .learnmore_information{
+  width: 300rpx;
+  display: flex;
+  align-items: center;
+}

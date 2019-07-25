@@ -1,0 +1,15 @@
+/* pages/trends/trends.wxss */
+@import "/pages/template/ariticles/ariticles.wxss";
+
+.swiper{
+
+width: 100%;
+height:200px;
+
+}
+.swiper_picture{
+
+width: 100%;
+
+
+}

@@ -1,0 +1,19 @@
+<!--template/ariticles/ariticles.wxml-->
+<template name="ariticles">
+<view class="container">
+ 
+  <view class="diary_name">{{diary_name}}</view>
+  
+  <view class="container_avatar">
+    <image src="{{avatar_image}}" class="avatar_image" ></image>
+    <view class="avatar_name">{{author_name}}</view>
+  </view>
+
+  
+  <image src="{{content_image}}" mode="widthFix" class="diary_picture">
+  </image>
+
+  <view class="diary_sketch">{{content_sketch}}</view>
+  <view class="time">{{write_time}}</view>
+</view>
+</template>

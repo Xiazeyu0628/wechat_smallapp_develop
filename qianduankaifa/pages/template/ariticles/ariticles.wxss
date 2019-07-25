@@ -1,0 +1,78 @@
+/* template/ariticles/ariticles.wxss */
+.container{
+
+ display: flex;
+ flex-direction: column;
+ justify-content:flex-start;
+ align-items:  center;
+ background-color: rgb(255, 255, 255);
+ border-top: 1rpx solid rgb(212, 212, 212);
+ border-bottom: 1rpx solid rgb(212, 212, 212);
+ 
+}
+/*顶层盒子可以不指定宽高，放多少元素就有多宽就有多高*/
+
+.container_avatar{
+ width: 100vw;
+ height: 4vh;
+ display: flex;
+ flex-direction: row;
+ justify-content:flex-start;
+ align-items:  center;
+
+}
+
+
+/*盒子必须包含宽高，否则盒子就不存在*/
+/*盒子里面可以只包含一些文字*/
+
+.diary_name{
+  width: 100vw;
+  height: 7vh;
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+  font-size: 50rpx;
+  font-weight: bold;
+  margin-left: 10rpx;
+}
+
+.avatar_image{
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 100%;
+  margin-left: 10rpx;
+}
+
+.avatar_name{
+ display: flex;
+ align-items:  center;
+ margin-left: 10rpx;
+color: rgb(0, 0, 0);
+}
+
+.diary_picture{
+  width: 100%;
+}
+
+.diary_sketch{
+ width: 100%;
+ display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+  font-size: 35rpx;
+  
+  
+  
+}
+
+.time{
+
+  width: 100%;
+  height: 40rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+  font-size: 30rpx;
+
+}

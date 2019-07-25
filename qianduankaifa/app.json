@@ -1,0 +1,49 @@
+{
+  "pages": [
+    
+    "pages/index/index",
+    "pages/index_navigateTo/timetable/timetable",
+    "pages/trends/trends",
+    "pages/details/framework/framework",
+    "pages/index_navigateTo/information/information",
+    "pages/index_navigateTo/service/service",
+    "pages/home/home",
+    "pages/upload/upload"
+  
+  ],
+  "window": {
+    "backgroundColor": "#f2f2f2",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "Xia_Zeyu的粪山",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#626567",
+    "selectedColor": "#2A8CE5",
+    "backgroundColor": "#FBFBFB",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "Index",
+        "iconPath": "images/index.png",
+        "selectedIconPath": "images/index_focus.png"
+      },
+      {
+        "pagePath": "pages/trends/trends",
+        "text": "trends",
+        "iconPath": "images/discovery.png",
+        "selectedIconPath": "images/discovery_focus.png"
+      },
+      {
+        "pagePath": "pages/home/home",
+        "text": "home",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home_active.png"
+      }
+    ]
+  },
+  "cloud": true
+}

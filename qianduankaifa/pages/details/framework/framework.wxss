@@ -1,0 +1,70 @@
+/* pages/details/framework/framework.wxss */
+/*@import "/pages/template/movie/movie.wxss";*/
+
+
+.scroll_container{
+display: flex;
+width: 100vw;
+height: 95vh;
+}
+.avatar_container{
+
+ display: flex;
+ flex-direction: row;
+ justify-content:flex-start;
+ align-items:  center;
+ background-color: rgb(255, 255, 255);
+
+}
+
+
+
+.titie{
+
+ width: 100vw;
+  height: 7vh;
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+  font-size: 50rpx;
+  font-weight: bold;
+  margin-left: 10rpx;
+
+}
+
+.avatar_image{
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 100%;
+  margin-left: 10rpx;
+}
+
+.avatar_name{
+ display: flex;
+ align-items:  center;
+ margin-left: 10rpx;
+color: rgb(0, 0, 0);
+}
+
+.content_picture{
+  width: 100%;
+}
+
+.bottom_container{
+display: flex;
+flex-direction: row;
+justify-content:space-around; 
+width: 100vw;
+height: 5vh;
+}
+
+
+
+.image{
+  width: 60rpx;
+  height: 60rpx;
+}
+
+
+
+

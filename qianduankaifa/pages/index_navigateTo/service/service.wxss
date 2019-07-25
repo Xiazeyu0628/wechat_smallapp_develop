@@ -1,0 +1,40 @@
+/* pages/service/service.wxss */
+
+.container{
+  height: auto
+}
+.scroll_container{
+display: flex;
+width: 100%;
+height: 95vh;
+}
+
+.bottom_container{
+display: flex;
+flex-direction: row;
+justify-content:space-around; 
+width: 100%;
+height: 5vh;
+}
+
+
+.element{
+  width: 33%;
+  height :100%;
+display: flex;
+flex-direction: column;
+justify-content:center; 
+align-items: center;
+
+
+}
+
+.image{
+  width: 45rpx;
+  height: 45rpx;
+}
+
+.font_size{
+
+  font-size: 25rpx;
+}

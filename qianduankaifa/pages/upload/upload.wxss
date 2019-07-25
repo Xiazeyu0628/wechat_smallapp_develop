@@ -1,0 +1,5 @@
+/* pages/upload/upload.wxss */
+page{
+
+  background-color: rgb(238, 236, 236)
+}

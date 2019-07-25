@@ -1,0 +1,18 @@
+/**app.wxss**/
+@import 'style/weui.wxss';
+
+ .userinfo-avatar {
+  width:  20%;
+  height: 50%;
+  margin: 20rpx;
+  border-radius: 100%;
+}
+
+ .userinfo-nickname {
+  color: rgb(0, 0, 0);
+}
+
+.tip_hover_class{
+  opacity: 0.9;
+  background: #f7f7f7;
+}
