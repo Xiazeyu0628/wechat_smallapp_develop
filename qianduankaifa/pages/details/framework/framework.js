@@ -31,7 +31,7 @@ Page({
       success: function (res) 
       {
         let temp = res.data[0].diary_data[id - 1];  //id为1，对应数组元素0
-        console.log(id);
+        console.log("传入framework页面的id为",id);
 
         wx.getStorage({
           key: 'state',
@@ -46,7 +46,7 @@ Page({
           },
           fail: function (res) 
           { //第一次调用一定会失败，因为本身里面没有值，干脆就直接再fali回调函数里赋值了
-          wx.setStorage('state', {})
+          wx.setStorage({key:'state',data:{}})
         //定义一个空对象，否则下面调用'state'储存时，会调用失败的。
           that.setData({
             flag: false,

@@ -53,7 +53,7 @@ Page({
             })
             db.collection("informations").doc("1").update({
               data: {
-                diary_data: _.unshift([that.data])
+                diary_data: _.push([that.data])
               }
             })
             wx.showToast({

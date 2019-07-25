@@ -27,7 +27,7 @@
 <view bindtouchstart="handlerStart" catchtouchmove="handlerMove" bindtouchcancel="handlerCancel" bindtouchend="handlerEnd" class="user" style="width: {{ui.menuWidth}}px">
    <view style="width: {{ui.menuWidth}}px;left:{{-ui.menuWidth/3 + ui.offsetLeft/3}}px" class="user-box {{!ui.tStart? 'withAnimate': ''}}">
      <view class="user-face-wrapper">
-       <image class="user-face" src="../../../images/ic_face.png"></image>
+    
      </view>
      <view wx:for="1" wx:key="index" class="one-menu">
         <text>学习资料</text>
